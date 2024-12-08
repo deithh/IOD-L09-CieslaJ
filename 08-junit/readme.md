@@ -1,12 +1,12 @@
 3.1  
-testy przestały by działąć ze względu na wymaganie metody statycznej przez beforeall
+testy przestały by działać ze względu na wymaganie metody statycznej przez beforeall
 
 
 4.1  
 test1 - failure niepoprawny wynik, test2 - error nieoczekiwany błąd
 
 4.2  
-assertion error
+AssertionError
 
 5.1  
 whitebox
