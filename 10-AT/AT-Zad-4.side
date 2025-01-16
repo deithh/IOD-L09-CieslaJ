@@ -1,0 +1,445 @@
+{
+  "id": "8610a4aa-2708-4270-a5ea-23ccd27740b7",
+  "version": "2.0",
+  "name": "4",
+  "url": "http://localhost:8080/accounts/controller?action=db_reset",
+  "tests": [{
+    "id": "7e2d30ca-a0a3-43a2-b4b4-6d12a72e86ef",
+    "name": "testowanie wpłat i wypłat",
+    "commands": [{
+      "id": "3f635ad1-c4bc-4dc5-a116-98e7f9ef7dc3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/accounts/controller?action=db_reset",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b51f93a8-19c8-4e14-bc77-82fdcf5f2dca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56d45a67-caf0-4745-8f4e-9f8849bd4d86",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//ul[@id='navlist']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'controller?action=register_form')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "064e2816-2743-4285-b744-f90a4c76102f",
+      "comment": "",
+      "command": "click",
+      "target": "css=table",
+      "targets": [
+        ["css=table", "css:finder"],
+        ["xpath=//div[@id='contentSingle']/form/table", "xpath:idRelative"],
+        ["xpath=//table", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32acba26-83e0-4d6b-99aa-3545f61140d4",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acf3c962-9f52-4360-8beb-db8875bb071b",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "16665568-fb6a-4fd1-af5c-8eeac948f4f7",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "5d3f3245-b31f-4618-bfc9-a2bc95c31082",
+      "comment": "",
+      "command": "type",
+      "target": "name=repeat_password",
+      "targets": [
+        ["name=repeat_password", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='repeat_password']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "9e27dd61-5c29-4052-88e2-39dc9362b03c",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Jan Kowalski"
+    }, {
+      "id": "82ab4dc2-d04b-4522-82a8-d454d5387f5a",
+      "comment": "",
+      "command": "type",
+      "target": "name=addressData",
+      "targets": [
+        ["name=addressData", "name"],
+        ["css=tr:nth-child(6) input", "css:finder"],
+        ["xpath=//input[@name='addressData']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": "address"
+    }, {
+      "id": "3a28e2bb-8759-4d3a-bfd1-8da3c540b490",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c77bf635-0657-42bb-bdb7-7009b535aa82",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc8c0a09-1174-4c7c-a71b-bb82089b5413",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "5b369067-7fea-4e77-ad8a-7fb940f9d199",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "765aef6f-cdb6-4f70-9ed1-aa1d453ac07c",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr[4]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f11bbdd-0005-48da-bfac-963c551e3513",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitAdd",
+      "targets": [
+        ["name=submitAdd", "name"],
+        ["css=td:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='submitAdd']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form/table/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ea590ba-9508-440e-bc4a-4bae317c24df",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(2) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='accounts']/tbody/tr[2]/td", "xpath:idRelative"],
+        ["xpath=//tr[2]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'74 4513 6843 2404 5800 6931 8556')]", "xpath:innerText"]
+      ],
+      "value": "acc_nb"
+    }, {
+      "id": "24254d52-ffcd-487b-bfa7-bc866e0671e9",
+      "comment": "",
+      "command": "click",
+      "target": "name=accountDeposit",
+      "targets": [
+        ["name=accountDeposit", "name"],
+        ["css=form:nth-child(6) select", "css:finder"],
+        ["xpath=//select[@name='accountDeposit']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[2]/table/tbody/tr/td[2]/select", "xpath:idRelative"],
+        ["xpath=//form[2]/table/tbody/tr/td[2]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'74 4513 6843 2404 5800 6931 8556')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95d92704-1fe1-4e2f-93fe-fab96bd4a9ed",
+      "comment": "",
+      "command": "select",
+      "target": "name=accountDeposit",
+      "targets": [],
+      "value": "label=${acc_nb}"
+    }, {
+      "id": "110b2efa-2bad-4d2b-8e57-8b28938ea494",
+      "comment": "",
+      "command": "click",
+      "target": "name=amountDeposit",
+      "targets": [
+        ["name=amountDeposit", "name"],
+        ["css=form:nth-child(6) td:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='amountDeposit']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[2]/table/tbody/tr/td[4]/input", "xpath:idRelative"],
+        ["xpath=//td[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ec12736-cd12-4c4b-9062-8a0d655977ff",
+      "comment": "",
+      "command": "type",
+      "target": "name=amountDeposit",
+      "targets": [
+        ["name=amountDeposit", "name"],
+        ["css=form:nth-child(6) td:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='amountDeposit']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[2]/table/tbody/tr/td[4]/input", "xpath:idRelative"],
+        ["xpath=//td[4]/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "d36b1cc6-fad5-4998-a026-1139df628fc6",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitDeposit",
+      "targets": [
+        ["name=submitDeposit", "name"],
+        ["css=form:nth-child(6) td:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='submitDeposit']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[2]/table/tbody/tr/td[5]/input", "xpath:idRelative"],
+        ["xpath=//td[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdd22cf9-2aac-44c0-9fca-bb6d1d1e7bab",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='accounts']/tbody/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'999,00')]", "xpath:innerText"]
+      ],
+      "value": "999,00"
+    }, {
+      "id": "491aac2c-07a2-44eb-a1ae-595897659cf3",
+      "comment": "",
+      "command": "click",
+      "target": "name=accountPayUp",
+      "targets": [
+        ["name=accountPayUp", "name"],
+        ["css=form:nth-child(7) select", "css:finder"],
+        ["xpath=//select[@name='accountPayUp']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[3]/table/tbody/tr/td[2]/select", "xpath:idRelative"],
+        ["xpath=//form[3]/table/tbody/tr/td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c5d1ed8-b935-45c7-804b-b504fbb6b32c",
+      "comment": "",
+      "command": "select",
+      "target": "name=accountPayUp",
+      "targets": [],
+      "value": "label=${acc_nb}"
+    }, {
+      "id": "e25816e0-6b15-4035-9712-2516eeb427f9",
+      "comment": "",
+      "command": "click",
+      "target": "name=amountPayUp",
+      "targets": [
+        ["name=amountPayUp", "name"],
+        ["css=form:nth-child(7) td:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='amountPayUp']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[3]/table/tbody/tr/td[4]/input", "xpath:idRelative"],
+        ["xpath=//form[3]/table/tbody/tr/td[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48f81011-d4d0-47ed-a9ef-29b8a60e3824",
+      "comment": "",
+      "command": "type",
+      "target": "name=amountPayUp",
+      "targets": [
+        ["name=amountPayUp", "name"],
+        ["css=form:nth-child(7) td:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='amountPayUp']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[3]/table/tbody/tr/td[4]/input", "xpath:idRelative"],
+        ["xpath=//form[3]/table/tbody/tr/td[4]/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "a4441866-7f8a-4c39-b45e-7567a9f9bfe1",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitPayUp",
+      "targets": [
+        ["name=submitPayUp", "name"],
+        ["css=form:nth-child(7) td:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='submitPayUp']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[3]/table/tbody/tr/td[5]/input", "xpath:idRelative"],
+        ["xpath=//form[3]/table/tbody/tr/td[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3702a810-44ef-4d50-8c95-3e4b4b168678",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=error-message",
+      "targets": [
+        ["id=error-message", "id"],
+        ["css=#error-message", "css:finder"],
+        ["xpath=//span[@id='error-message']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Not enough money!')]", "xpath:innerText"]
+      ],
+      "value": "Not enough money!"
+    }, {
+      "id": "625963ca-c913-41b1-b6cb-41bc07cce440",
+      "comment": "",
+      "command": "click",
+      "target": "name=accountPayUp",
+      "targets": [
+        ["name=accountPayUp", "name"],
+        ["css=form:nth-child(7) select", "css:finder"],
+        ["xpath=//select[@name='accountPayUp']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[3]/table/tbody/tr/td[2]/select", "xpath:idRelative"],
+        ["xpath=//form[3]/table/tbody/tr/td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c73c6be-d641-4bc2-9d58-4fcd30465286",
+      "comment": "",
+      "command": "select",
+      "target": "name=accountPayUp",
+      "targets": [],
+      "value": "label=${acc_nb}"
+    }, {
+      "id": "229d7732-0899-4c16-87fe-acdd49d9c77b",
+      "comment": "",
+      "command": "click",
+      "target": "name=amountPayUp",
+      "targets": [
+        ["name=amountPayUp", "name"],
+        ["css=form:nth-child(7) td:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='amountPayUp']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[3]/table/tbody/tr/td[4]/input", "xpath:idRelative"],
+        ["xpath=//form[3]/table/tbody/tr/td[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07f89dd4-cd5e-465a-8f63-36b6164ab61b",
+      "comment": "",
+      "command": "type",
+      "target": "name=amountPayUp",
+      "targets": [
+        ["name=amountPayUp", "name"],
+        ["css=form:nth-child(7) td:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='amountPayUp']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[3]/table/tbody/tr/td[4]/input", "xpath:idRelative"],
+        ["xpath=//form[3]/table/tbody/tr/td[4]/input", "xpath:position"]
+      ],
+      "value": "500"
+    }, {
+      "id": "f55b1c48-2101-4658-955a-36ddfbc78d03",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitPayUp",
+      "targets": [
+        ["name=submitPayUp", "name"],
+        ["css=form:nth-child(7) td:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='submitPayUp']", "xpath:attributes"],
+        ["xpath=//div[@id='contentSingle']/form[3]/table/tbody/tr/td[5]/input", "xpath:idRelative"],
+        ["xpath=//form[3]/table/tbody/tr/td[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c61a3e5a-be71-4bfd-be62-78aa2ae4a639",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='accounts']/tbody/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'498,00')]", "xpath:innerText"]
+      ],
+      "value": "498,00"
+    }]
+  }],
+  "suites": [{
+    "id": "89c92c59-407f-4174-9369-c26457a24bd5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7e2d30ca-a0a3-43a2-b4b4-6d12a72e86ef"]
+  }],
+  "urls": ["http://localhost:8080/accounts/controller?action=db_reset"],
+  "plugins": []
+}
