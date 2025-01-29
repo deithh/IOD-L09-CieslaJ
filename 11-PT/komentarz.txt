@@ -1,0 +1,8 @@
+1.
+Response time 826 ms throughoutput 1.6/s
+Wielokrotne obliczanie średnich wydatków w pętli wyciągnięto przed pętle [obliczane raz na request]
+Response time 28ms th 1.9/s
+
+2.
+Średnia przepustowość proponowanej konfiguracji: 2/s
+Rekomendowana liczba drukarek: 29 (przepustowość 5.6/s
